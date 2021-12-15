@@ -1,0 +1,29 @@
+::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  display: none;
+}
+
+ion-content {
+  --offset-bottom: auto !important;
+  --overflow: hidden;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+#posterDiv {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#posterButton {
+  font-size: 14px;
+  padding: 0;
+}
+img {
+  border: solid red 1px;
+  border-radius: 8px;
+}

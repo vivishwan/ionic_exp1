@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+// import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -6,7 +8,13 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  constructor(private router: Router) {}
 
-  constructor() {}
-
+  ngOnInit() {}
+  goToPoster() {
+    this.router.navigate(['/poster']);
+  }
+  // openURL = function (url) {
+  //   navigator.app.loadUrl(url, { openExternal: true });
+  // };
 }

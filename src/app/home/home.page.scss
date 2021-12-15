@@ -1,3 +1,45 @@
+::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  display: none;
+}
+
+ion-content {
+  --offset-bottom: auto !important;
+  --overflow: hidden;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+#posterDiv {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#posterButton {
+  font-size: 14px;
+  padding: 0;
+}
+
+#test {
+  text-align: center;
+  color: darkgrey;
+  font-weight: 550;
+}
+ion-card {
+  border: solid yellow 1px;
+  // width: 10;
+  // --min-height: 30vw;
+}
+ion-slides {
+  min-height: 30vw;
+}
 #container {
   text-align: center;
 
